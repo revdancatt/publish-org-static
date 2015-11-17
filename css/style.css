@@ -16,8 +16,12 @@ body {
 	font-family: adelle, serif;
 	font-weight: 200;
 	color: black;
-	background: #F3D407;
 	font-size: 20px;
+}
+
+body.is_yellow {
+  background: #F3D407;
+  color: black;
 }
 
 body strong {
@@ -68,8 +72,8 @@ hr {
 
 .the-very-top {
   background: black;
-  height: 51px;
-  margin-top: 4px;
+  height: 55px;
+  border-top: 4px solid #F3D407;
   color: #F3D407;
 }
 
@@ -87,6 +91,10 @@ hr {
 
 .the-very-top a:hover {
   color: white;
+}
+
+.the-very-top a:visited {
+  color: inherit;
 }
 
 .the-very-top a.active {
@@ -131,6 +139,10 @@ footer, .page-wrap:after {
 	height: 288px;
 }
 
+footer.alt_footer, .page-wrap:after {
+	height: 92px;
+}
+
 footer {
 	text-align: center;
 	position: relative;
@@ -151,6 +163,39 @@ footer p {
 	font-size: 0.8em;
 }
 
+footer.alt_footer {
+  background: #F3D407;
+  font-size: 0.6em;
+}
+
+footer.alt_footer a {
+  text-decoration: none;
+}
+
+footer.alt_footer img {
+  margin-left: 8px;
+  margin-right: 8px;
+  position: relative;
+  top: 30px;
+}
+
+footer.alt_footer img:first-child {
+  margin-left: 8px;
+  margin-right: 16px;
+  position: relative;
+  top: 30px;
+}
+
+footer.alt_footer div.left_side {
+  float: left;
+  padding-left: 70px
+}
+
+footer.alt_footer div.right_side {
+  float: right;
+  padding-right: 70px
+}
+
 #parallax_wrap, #parallax_wrap_home {
 	background: url(/images/main_pic.jpg) center center no-repeat;
   -webkit-background-size: cover;
@@ -169,6 +214,10 @@ footer p {
 	height: 380px;
 }
 
+#parallax_wrap, #parallax_inner {
+  height: 266px;
+}
+
 #infotext {
 	text-align: left;
 	font-size: 1em;
@@ -181,6 +230,11 @@ footer p {
 .page-wrap {
 	min-height: 100%;
   margin-bottom: -288px;
+}
+
+.page-wrap_alt_footer {
+	min-height: 100%;
+  margin-bottom: -92px;
 }
 
 .page-wrap:after {
