@@ -185,6 +185,11 @@ footer.alt_footer, .page-wrap_alt_footer:after {
 	height: 92px;
 }
 
+footer.alt_footer div.showme {
+  display:none;
+  height: 3em;
+}
+
 footer {
 	text-align: center;
 	position: relative;
@@ -448,6 +453,34 @@ and (max-width : 600px) {
 }
 
 
+@media only screen
+and (max-width : 600px) {
+  /* Sort the footer out */
+  .page-wrap_alt_footer {
+  	min-height: 100%;
+    margin-bottom: -144px;
+  }
+  footer.alt_footer, .page-wrap_alt_footer:after {
+  	height: 144px;
+  }
+  footer.alt_footer div.left_side {
+    float: none;
+    text-align: center;
+    padding-left: 0;
+  }
+  footer.alt_footer div.right_side {
+    float: none;
+    text-align: center;
+    padding-right: 0;
+  }
+  footer.alt_footer div.right_side img {
+    top: 12px;
+  }
+  footer.alt_footer .showme {
+    display: block !important;
+  }
+}
+
 
 @media only screen
 and (min-width : 600px)
@@ -462,6 +495,7 @@ and (max-width : 768px) {
 		height: 140px;
 	}
 }
+
 
 @media only screen
 and (min-width : 768px)
