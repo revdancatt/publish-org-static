@@ -65,6 +65,34 @@ hr {
 	color: #000;
 	background-color: #000;
 }
+
+.the-very-top {
+  background: black;
+  height: 51px;
+  margin-top: 4px;
+  color: #F3D407;
+}
+
+.the-very-top img {
+  margin-left: 71px;
+  position: relative;
+  top: 9px;
+}
+
+.the-very-top a {
+  color: inherit;
+  text-decoration: none;
+  margin-left: 22px;
+}
+
+.the-very-top a:hover {
+  color: white;
+}
+
+.the-very-top a.active {
+  color: white;
+}
+
 article {
 	line-height: 1.2em;
 	text-align: center;
@@ -74,6 +102,24 @@ article {
 
 article p {
 	margin-top: 1em;
+  line-height: 1.6em;
+}
+
+article h2 {
+  font-size: 1.6em;
+  font-family: jaf-bernino-sans-condensed, sans-serif;
+  font-weight: 800;
+	text-align: inherit;
+	margin-top: 2em;
+	margin-bottom: 0.2em;
+}
+
+article a.new_block {
+  color: #c00000;
+  text-decoration: none;
+  display: block;
+  font-weight: 800;
+  margin-top: 0.5em;
 }
 
 aside {
@@ -82,7 +128,7 @@ aside {
 }
 
 footer, .page-wrap:after {
-	height: 244px;
+	height: 288px;
 }
 
 footer {
@@ -95,7 +141,9 @@ footer hr {
 }
 
 footer img {
-	margin-bottom: 3em;
+	margin-bottom: 2em;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 footer p {
@@ -103,7 +151,7 @@ footer p {
 	font-size: 0.8em;
 }
 
-#parallax_wrap {
+#parallax_wrap, #parallax_wrap_home {
 	background: url(/images/main_pic.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -112,7 +160,7 @@ footer p {
 	height: 380px;
 }
 
-#parallax_inner {
+#parallax_inner, #parallax_inner_home {
 	background: url(/images/spotlight_overlay2.png) center center no-repeat;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
@@ -132,7 +180,7 @@ footer p {
 
 .page-wrap {
 	min-height: 100%;
-  margin-bottom: -244px;
+  margin-bottom: -288px;
 }
 
 .page-wrap:after {
@@ -215,7 +263,7 @@ and (max-width : 320px) {
 		line-height: 10px !important;
 		margin-bottom: 0 !important;
 	}
-	#parallax_wrap, #parallax_inner {
+	#parallax_wrap_home, #parallax_inner_home {
 		height: 120px;
 	}
 	footer img {
@@ -250,7 +298,7 @@ and (max-width : 480px) {
 		margin-bottom: 0 !important;
 		font-size: 0.9em !important;
 	}
-	#parallax_wrap, #parallax_inner {
+  #parallax_wrap_home, #parallax_inner_home {
 		height: 120px;
 	}
 	footer img {
@@ -264,7 +312,7 @@ and (max-width : 600px) {
 	body {
 		font-size: 18px;
 	}
-	#parallax_wrap, #parallax_inner {
+  #parallax_wrap_home, #parallax_inner_home {
 		height: 180px;
 	}
 	footer img {
@@ -278,7 +326,7 @@ and (max-width : 768px) {
 	body {
 		font-size: 18px;
 	}
-	#parallax_wrap, #parallax_inner {
+  #parallax_wrap_home, #parallax_inner_home {
 		height: 200px;
 	}
 }
@@ -289,7 +337,7 @@ and (max-width : 800px) {
 	body {
 		font-size: 19px;
 	}
-	#parallax_wrap, #parallax_inner {
+  #parallax_wrap_home, #parallax_inner_home {
 		height: 280px;
 	}
 }
@@ -300,7 +348,7 @@ and (max-width : 1024px) {
 	body {
 		font-size: 20px;
 	}
-	#parallax_wrap, #parallax_inner {
+  #parallax_wrap_home, #parallax_inner_home {
 		height: 300px;
 	}
 }
