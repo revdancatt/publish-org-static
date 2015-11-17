@@ -132,7 +132,7 @@ hr {
 }
 
 .the-very-top a:hover {
-  color: white;
+  color: white !important;
 }
 
 .the-very-top a:visited {
