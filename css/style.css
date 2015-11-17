@@ -139,7 +139,7 @@ footer, .page-wrap:after {
 	height: 288px;
 }
 
-footer.alt_footer, .page-wrap:after {
+footer.alt_footer, .page-wrap_alt_footer:after {
 	height: 92px;
 }
 
