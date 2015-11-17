@@ -381,6 +381,9 @@ and (max-width : 320px) {
 	footer img {
 		margin-bottom: 0.5em;
 	}
+  .the-very-top img {
+    margin-left: 6px;
+  }
 }
 
 @media only screen
@@ -419,6 +422,9 @@ and (max-width : 480px) {
 	footer img {
 		margin-bottom: 0.5em;
 	}
+  .the-very-top img {
+    margin-left: 6px;
+  }
 }
 
 @media only screen
@@ -436,7 +442,12 @@ and (max-width : 600px) {
 	footer img {
 		margin-bottom: 0.5em;
 	}
+  .the-very-top img {
+    margin-left: 6px;
+  }
 }
+
+
 
 @media only screen
 and (min-width : 600px)
