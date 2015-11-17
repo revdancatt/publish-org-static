@@ -40,8 +40,16 @@ body a:visited {
   color: #534701;
 }
 
+body a.strong {
+  font-weight: 600;
+}
+
 header {
 	text-align: center;
+}
+
+.left_aligned_headers header {
+  text-align: left;
 }
 
 header h1 {
@@ -60,6 +68,40 @@ header h2 {
 	font-weight: 300;
   font-style: italic;
 	margin-bottom: 1em;
+}
+
+article h2.date {
+  background: #F3D407;
+  display: inline-block;
+  margin-top: 1em;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+article h2.post_title {
+  margin-top: 1em;
+  font-size: 1.4em;
+}
+
+article h3.author {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+article.post h3 {
+  font-size: 1.2em;
+  font-weight: 800;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+article.post hr.end_post {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+img.post_header_image {
+  max-width: 100%;
 }
 
 hr {
@@ -251,6 +293,14 @@ footer.alt_footer div.right_side {
 	overflow: hidden;
 }
 
+.mc_embed_signup_alt {
+  margin-left: 0 !important;
+}
+
+.mc_embed_signup_alt form {
+  padding-left: 0 !important;
+}
+
 #mc_embed_signup_scroll {
 	margin-top: 1em;
 }
@@ -270,6 +320,11 @@ footer.alt_footer div.right_side {
 	border: none;
 	margin: 0 !important;
 	border-width: 0;
+}
+
+.mc_embed_signup_scroll_alt .email {
+  background: #efefef;
+  color: #ccc;
 }
 
 #mc_embed_signup .button {
